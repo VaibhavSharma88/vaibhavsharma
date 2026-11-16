@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Sharma - Growth &amp; Content Marketer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body{ margin:0; -webkit-font-smoothing:antialiased; background:#0A0A0A; }
+    ::selection{ background:#FF2E00; color:#fff; }
+    @keyframes pulse{ 0%,100%{ opacity:1; } 50%{ opacity:0.4; } }
+  </style>
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<template id="__bundler_thumbnail" data-bg-color="#0A0A0A">
+  <svg viewBox="0 0 80 56" xmlns="http://www.w3.org/2000/svg">
+    <rect width="80" height="56" fill="#0A0A0A"/>
+    <circle cx="24" cy="28" r="3" fill="#FF2E00"/>
+    <text x="34" y="26" font-family="Oswald, sans-serif" font-size="11" font-weight="700" fill="#FAFAFA" letter-spacing="0.5">VS</text>
+    <text x="34" y="38" font-family="monospace" font-size="5" fill="#B8B8B8" letter-spacing="0.5">PORTFOLIO</text>
+  </svg>
+</template>
+
+<div style="background:#0A0A0A;color:#FAFAFA;font-family:Inter, sans-serif;line-height:1.6;">
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(10,10,10,0.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(250,250,250,0.28);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:68px;flex-wrap:wrap;gap:10px;">
+      <div style="font-family:Oswald, sans-serif;font-size:20px;letter-spacing:0.06em;display:flex;align-items:center;gap:10px;">
+        <span style="width:10px;height:10px;border-radius:50%;background:#FF2E00;box-shadow:0 0 0 3px rgba(255,46,0,0.22);display:inline-block;"></span>
+        VAIBHAV SHARMA
+      </div>
+      <nav>
+        <ul style="display:flex;gap:34px;list-style:none;margin:0;padding:0;">
+          <li><a href="#work" style="color:#B8B8B8;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;padding-bottom:3px;background-image:linear-gradient(#FAFAFA,#FAFAFA);background-repeat:no-repeat;background-position:left bottom;background-size:0% 1px;transition:background-size 280ms ease-out, color 200ms ease-out;" style-hover="color:#FAFAFA;background-size:100% 1px;">Work</a></li>
+          <li><a href="#toolkit" style="color:#B8B8B8;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;padding-bottom:3px;background-image:linear-gradient(#FAFAFA,#FAFAFA);background-repeat:no-repeat;background-position:left bottom;background-size:0% 1px;transition:background-size 280ms ease-out, color 200ms ease-out;" style-hover="color:#FAFAFA;background-size:100% 1px;">Toolkit</a></li>
+          <li><a href="#experience" style="color:#B8B8B8;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;padding-bottom:3px;background-image:linear-gradient(#FAFAFA,#FAFAFA);background-repeat:no-repeat;background-position:left bottom;background-size:0% 1px;transition:background-size 280ms ease-out, color 200ms ease-out;" style-hover="color:#FAFAFA;background-size:100% 1px;">Experience</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="#contact" style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;border:1px solid rgba(250,250,250,0.55);background:rgba(250,250,250,0.06);padding:9px 18px;border-radius:0;color:#FAFAFA;text-decoration:none;transition:transform 200ms ease-out, border-color 200ms ease-out, background 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;background:rgba(255,46,0,0.08);transform:translateY(-1px);">Get in touch</a>
+    </div>
+  </header>
+
+  <section style="padding:96px 0 70px;border-bottom:1px solid rgba(250,250,250,0.28);position:relative;overflow:hidden;background:#0A0A0A;">
+    <video ref="{{ reelVideoRef }}" src="assets/bigboytoyz-reel.mp4" autoplay="{{ true }}" loop="{{ true }}" playsinline="{{ true }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;"></video>
+    <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(to right, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.62) 40%, rgba(10,10,10,0.22) 70%, rgba(10,10,10,0.05) 100%);"></div>
+    <div style="position:absolute;inset:0;z-index:1;background:radial-gradient(600px 300px at 85% -10%, rgba(255,46,0,0.10), transparent 60%), linear-gradient(to bottom, rgba(10,10,10,0.45), rgba(10,10,10,0) 35%, rgba(10,10,10,0.6));"></div>
+    <div style="position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 28px;">
+      <div style="{{ heroEyebrowStyle }}">
+        <span style="width:26px;height:1px;background:#FF2E00;display:inline-block;"></span>
+        Growth &amp; Content Marketer · Delhi, India
+      </div>
+      <h1 style="{{ heroH1Style }}"><span style="color:#FF5A33;">Built an audience.</span><br/>Now I build campaigns.</h1>
+      <p style="{{ heroPStyle }}">Three years turning car culture into content people actually watch, now applying the same instinct to performance marketing, paid social, and community growth. Numbers below are from real work, not projections.</p>
+      <p style="{{ heroPositioningStyle }}">My work has been entirely in consumer and D2C brands: automotive communities and dealerships, not enterprise software.</p>
+      <div style="{{ heroCtaStyle }}">
+        <a href="#work" style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:14px 26px;border-radius:0;display:inline-flex;align-items:center;gap:8px;background:#FF2E00;color:#fff;text-decoration:none;transition:transform 200ms ease-out, background 200ms ease-out;" style-hover="transform:translateY(-2px);background:#FF5A33;">View the work</a>
+        <a href="mailto:vaibhavz2002@gmail.com" style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:14px 26px;border-radius:0;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;transition:transform 200ms ease-out, border-color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;transform:translateY(-2px);">Email me</a>
+      </div>
+
+      <div ref="{{ gaugeClusterRef }}" style="margin-top:64px;display:grid;grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));gap:18px;">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+          <div style="{{ s.style }}">
+            <div style="position:relative;width:142px;height:142px;">
+              <div style="position:absolute;inset:0;">{{ s.ticks }}</div>
+              <svg viewBox="0 0 120 120" style="position:absolute;inset:0;width:100%;height:100%;display:block;transform:rotate(135deg);">
+                <circle cx="60" cy="60" r="44" fill="none" stroke="rgba(250,250,250,0.12)" stroke-width="3" stroke-dasharray="{{ s.trackDash }}"></circle>
+                <circle cx="60" cy="60" r="44" fill="none" stroke="#FF2E00" stroke-width="3" stroke-dasharray="{{ s.redlineDash }}"></circle>
+                <circle cx="60" cy="60" r="44" fill="none" stroke="#FAFAFA" stroke-width="3" stroke-dasharray="{{ s.fillDash }}"></circle>
+              </svg>
+              <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;">
+                <div style="font-family:'JetBrains Mono', monospace;font-size:24px;font-weight:700;letter-spacing:-0.02em;">{{ s.display }}</div>
+                <div style="width:18px;height:1px;background:#FF2E00;"></div>
+              </div>
+            </div>
+            <div style="font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;color:#B8B8B8;text-align:center;">{{ s.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" style="padding:88px 0;border-bottom:1px solid rgba(250,250,250,0.28);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:52px;flex-wrap:wrap;gap:12px;">
+        <h2 style="font-family:Oswald, sans-serif;font-size:clamp(30px, 4vw, 42px);text-transform:uppercase;letter-spacing:-0.01em;margin:0;">Selected Work</h2>
+        <div style="font-family:'JetBrains Mono', monospace;font-size:12.5px;color:#B8B8B8;">Three roles, three audiences, measured outcomes</div>
+      </div>
+
+      <div ref="{{ card0.ref }}" style="{{ card0.style }}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:28px 30px 20px;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:Oswald, sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:0.01em;">BigBoyToyz</div>
+            <div style="color:#FF2E00;font-size:13.5px;margin-top:6px;">Visual Content &amp; Marketing</div>
+          </div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12.5px;color:#B8B8B8;white-space:nowrap;padding-top:4px;">Sep 2024 - Present</div>
+        </div>
+        <p style="padding:0 30px 24px;max-width:680px;color:#B8B8B8;font-size:15px;margin:0;">I was tasked with generating leads for supercar buyers and sellers, so I directed and shot four ad concepts across video, carousel, and static formats, running them across both Meta (Instagram/Facebook) and Google Ads - with no prior ad-making experience. Sales-team feedback and lead data showed static posters underperforming, so I redesigned them around pricing and detailed photography instead of lifestyle framing. This kind of data-driven iteration, not guesswork, is how I approach every campaign. I managed a small team of interns supporting production, and separately represented the brand at Red Bull, TimesDrive Awards, and a Parliament tour.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));border-top:1px solid rgba(250,250,250,0.28);">
+          <sc-for list="{{ bbtStats }}" as="st" hint-placeholder-count="4">
+            <div ref="{{ st.ref }}" style="{{ st.cellStyle }}">
+              <div style="display:flex;align-items:center;gap:9px;">
+                <span style="width:12px;height:1px;background:#FF2E00;display:inline-block;flex-shrink:0;"></span>
+                <span style="font-family:'JetBrains Mono', monospace;font-size:10.5px;letter-spacing:0.14em;color:#B8B8B8;">{{ st.index }}</span>
+              </div>
+              <div style="font-family:'JetBrains Mono', monospace;font-size:34px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-top:14px;">{{ st.display }}</div>
+              <div style="font-size:11.5px;color:#B8B8B8;letter-spacing:0.05em;text-transform:uppercase;margin-top:10px;">{{ st.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 30px 24px;">
+          <a href="https://www.bigboytoyz.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><circle cx="8" cy="8" r="6.4"></circle><path d="M1.6 8h12.8M8 1.6c1.8 2 1.8 10.8 0 12.8M8 1.6c-1.8 2-1.8 10.8 0 12.8"></path></svg>bigboytoyz.com</a>
+          <a href="https://www.instagram.com/bigboytoyz_india/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><rect x="1.8" y="1.8" width="12.4" height="12.4" rx="3.6"></rect><circle cx="8" cy="8" r="3.2"></circle><circle cx="11.6" cy="4.4" r="0.75" fill="currentColor" stroke="none"></circle></svg>@bigboytoyz_india</a>
+          <a href="https://in.linkedin.com/company/bigboytoyz" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><rect x="1.6" y="1.6" width="12.8" height="12.8" rx="1.8"></rect><path d="M4.6 6.6v5M4.6 4.5v0.01M7.6 11.6v-5M7.6 8.2c0-1.1 0.8-1.7 1.7-1.7s1.7 0.7 1.7 1.9v3.2"></path></svg>LinkedIn</a>
+        </div>
+        <button onclick="{{ openCaseStudy_bigboytoyz }}" onmouseenter="{{ bbtBtn.onEnter }}" onmouseleave="{{ bbtBtn.onLeave }}" style="display:flex;align-items:center;justify-content:space-between;width:calc(100% - 60px);margin:0 30px 28px;background:#FF2E00;border:1px solid #FF2E00;color:#fff;font-family:Inter, sans-serif;font-size:13.5px;font-weight:600;padding:14px 18px;border-radius:0;cursor:pointer;transition:background 200ms ease-out, transform 200ms ease-out;" style-hover="background:#FF5A33;transform:translateY(-2px);">
+          <span>Read full case study</span>
+          <span style="{{ bbtBtn.arrowStyle }}">→</span>
+        </button>
+      </div>
+
+      <div ref="{{ card1.ref }}" style="{{ card1.style }}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:28px 30px 20px;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:Oswald, sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:0.01em;">TorqHeads</div>
+            <div style="color:#FF2E00;font-size:13.5px;margin-top:6px;">Founder - Community &amp; Growth Marketing</div>
+          </div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12.5px;color:#B8B8B8;white-space:nowrap;padding-top:4px;">2023 - Present</div>
+        </div>
+        <p style="padding:0 30px 24px;max-width:680px;color:#B8B8B8;font-size:15px;margin:0;">I built an automotive enthusiast community from zero, then grew it through daily content and direct audience feedback - treating it as a product with a retention loop, not a broadcast channel.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));border-top:1px solid rgba(250,250,250,0.28);">
+          <sc-for list="{{ thStats }}" as="st" hint-placeholder-count="4">
+            <div ref="{{ st.ref }}" style="{{ st.cellStyle }}">
+              <div style="display:flex;align-items:center;gap:9px;">
+                <span style="width:12px;height:1px;background:#FF2E00;display:inline-block;flex-shrink:0;"></span>
+                <span style="font-family:'JetBrains Mono', monospace;font-size:10.5px;letter-spacing:0.14em;color:#B8B8B8;">{{ st.index }}</span>
+              </div>
+              <div style="font-family:'JetBrains Mono', monospace;font-size:34px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-top:14px;">{{ st.display }}</div>
+              <div style="font-size:11.5px;color:#B8B8B8;letter-spacing:0.05em;text-transform:uppercase;margin-top:10px;">{{ st.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 30px 24px;">
+          <a href="https://www.instagram.com/torqheads_/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><rect x="1.8" y="1.8" width="12.4" height="12.4" rx="3.6"></rect><circle cx="8" cy="8" r="3.2"></circle><circle cx="11.6" cy="4.4" r="0.75" fill="currentColor" stroke="none"></circle></svg>@torqheads_</a>
+        </div>
+        <button onclick="{{ openCaseStudy_torqheads }}" onmouseenter="{{ thBtn.onEnter }}" onmouseleave="{{ thBtn.onLeave }}" style="display:flex;align-items:center;justify-content:space-between;width:calc(100% - 60px);margin:0 30px 28px;background:#FF2E00;border:1px solid #FF2E00;color:#fff;font-family:Inter, sans-serif;font-size:13.5px;font-weight:600;padding:14px 18px;border-radius:0;cursor:pointer;transition:background 200ms ease-out, transform 200ms ease-out;" style-hover="background:#FF5A33;transform:translateY(-2px);">
+          <span>Read full case study</span>
+          <span style="{{ thBtn.arrowStyle }}">→</span>
+        </button>
+      </div>
+
+      <div ref="{{ card2.ref }}" style="{{ card2.style }}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:28px 30px 20px;flex-wrap:wrap;">
+          <div>
+            <div style="font-family:Oswald, sans-serif;font-size:26px;text-transform:uppercase;letter-spacing:0.01em;">The Isaiko</div>
+            <div style="color:#FF2E00;font-size:13.5px;margin-top:6px;">Graphic Designer &amp; Marketing Support</div>
+          </div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12.5px;color:#B8B8B8;white-space:nowrap;padding-top:4px;">2022 - Nov 2023</div>
+        </div>
+        <p style="padding:0 30px 24px;max-width:680px;color:#B8B8B8;font-size:15px;margin:0;">I co-developed marketing strategy and produced the digital assets behind it - early proof that design decisions move real numbers, not just aesthetics.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));border-top:1px solid rgba(250,250,250,0.28);">
+          <sc-for list="{{ iskStats }}" as="st" hint-placeholder-count="4">
+            <div ref="{{ st.ref }}" style="{{ st.cellStyle }}">
+              <div style="display:flex;align-items:center;gap:9px;">
+                <span style="width:12px;height:1px;background:#FF2E00;display:inline-block;flex-shrink:0;"></span>
+                <span style="font-family:'JetBrains Mono', monospace;font-size:10.5px;letter-spacing:0.14em;color:#B8B8B8;">{{ st.index }}</span>
+              </div>
+              <div style="font-family:'JetBrains Mono', monospace;font-size:34px;font-weight:700;letter-spacing:-0.03em;line-height:1.05;margin-top:14px;">{{ st.display }}</div>
+              <div style="font-size:11.5px;color:#B8B8B8;letter-spacing:0.05em;text-transform:uppercase;margin-top:10px;">{{ st.label }}</div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin:0 30px 24px;">
+          <a href="https://theisaiko.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><circle cx="8" cy="8" r="6.4"></circle><path d="M1.6 8h12.8M8 1.6c1.8 2 1.8 10.8 0 12.8M8 1.6c-1.8 2-1.8 10.8 0 12.8"></path></svg>theisaiko.com</a>
+          <a href="https://www.instagram.com/the.isaiko/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><rect x="1.8" y="1.8" width="12.4" height="12.4" rx="3.6"></rect><circle cx="8" cy="8" r="3.2"></circle><circle cx="11.6" cy="4.4" r="0.75" fill="currentColor" stroke="none"></circle></svg>@the.isaiko</a>
+          <a href="https://in.linkedin.com/company/the-isaiko" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;text-decoration:none;font-size:12px;letter-spacing:0.05em;text-transform:uppercase;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.3" style="flex-shrink:0;"><rect x="1.6" y="1.6" width="12.8" height="12.8" rx="1.8"></rect><path d="M4.6 6.6v5M4.6 4.5v0.01M7.6 11.6v-5M7.6 8.2c0-1.1 0.8-1.7 1.7-1.7s1.7 0.7 1.7 1.9v3.2"></path></svg>LinkedIn</a>
+        </div>
+        <button onclick="{{ openCaseStudy_isaiko }}" onmouseenter="{{ iskBtn.onEnter }}" onmouseleave="{{ iskBtn.onLeave }}" style="display:flex;align-items:center;justify-content:space-between;width:calc(100% - 60px);margin:0 30px 28px;background:#FF2E00;border:1px solid #FF2E00;color:#fff;font-family:Inter, sans-serif;font-size:13.5px;font-weight:600;padding:14px 18px;border-radius:0;cursor:pointer;transition:background 200ms ease-out, transform 200ms ease-out;" style-hover="background:#FF5A33;transform:translateY(-2px);">
+          <span>Read full case study</span>
+          <span style="{{ iskBtn.arrowStyle }}">→</span>
+        </button>
+      </div>
+
+      <sc-if value="{{ activeCaseStudy }}" hint-placeholder-val="{{ false }}">
+        <div onclick="{{ closeCaseStudy }}" style="{{ csBackdropStyle }}">
+        <div onclick="{{ stopProp }}" style="{{ csPanelStyle }}">
+          <div style="position:sticky;top:0;background:#0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0 16px;margin-bottom:8px;border-bottom:1px solid rgba(250,250,250,0.28);z-index:2;">
+            <div style="font-family:Oswald, sans-serif;font-size:18px;text-transform:uppercase;letter-spacing:0.01em;">{{ activeCaseStudy.title }} - Case Study</div>
+            <button onclick="{{ closeCaseStudy }}" aria-label="Close" style="width:32px;height:32px;border-radius:50%;background:#0A0A0A;border:1px solid rgba(250,250,250,0.28);color:#FAFAFA;cursor:pointer;font-size:16px;flex-shrink:0;transition:border-color 200ms ease-out, color 200ms ease-out;" style-hover="border-color:#FF2E00;color:#FF2E00;">×</button>
+          </div>
+          <sc-for list="{{ activeCaseStudy.sections }}" as="sec" hint-placeholder-count="5">
+            <h3 style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#FF2E00;margin:22px 0 8px;">{{ sec.heading }}</h3>
+            <p style="font-size:14.5px;color:#B8B8B8;max-width:640px;margin:0;">{{ sec.body }}</p>
+          </sc-for>
+          <sc-if value="{{ csHasMedia }}" hint-placeholder-val="{{ true }}">
+          <h3 style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#FF2E00;margin:34px 0 4px;">Proof of work</h3>
+          <p style="font-size:13.5px;color:#B8B8B8;max-width:640px;margin:0 0 18px;">Drag an image or GIF onto any slot to fill it.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:14px;padding-bottom:8px;">
+            <sc-for list="{{ csMedia }}" as="m" hint-placeholder-count="3">
+              <div>
+                <div style="{{ m.wrapStyle }}">
+                  <image-slot id="{{ m.slotId }}" shape="rect" fit="cover" placeholder="{{ m.placeholder }}"></image-slot>
+                </div>
+                <div style="font-family:'JetBrains Mono', monospace;font-size:11px;color:#B8B8B8;margin-top:9px;line-height:1.5;">{{ m.caption }}</div>
+              </div>
+            </sc-for>
+          </div>
+          </sc-if>
+        </div>
+        </div>
+      </sc-if>
+
+    </div>
+  </section>
+
+  <section id="toolkit" style="padding:88px 0;border-bottom:1px solid rgba(250,250,250,0.28);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:52px;flex-wrap:wrap;gap:12px;">
+        <h2 style="font-family:Oswald, sans-serif;font-size:clamp(30px, 4vw, 42px);text-transform:uppercase;letter-spacing:-0.01em;margin:0;">Toolkit</h2>
+        <div style="font-family:'JetBrains Mono', monospace;font-size:12.5px;color:#B8B8B8;">All active and in current use</div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:14px;">
+        <sc-for list="{{ toolkit }}" as="t" hint-placeholder-count="13">
+          <div ref="{{ t.ref }}" style="{{ t.rowStyle }}">
+            <div>
+              <div style="font-size:14px;">{{ t.name }}</div>
+              <div style="font-size:11.5px;color:#B8B8B8;margin-top:3px;">{{ t.sub }}</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+              <span style="width:8px;height:8px;border-radius:50%;background:{{ t.dotColor }};display:inline-block;animation:{{ t.dotAnim }};"></span>
+              <span style="font-family:'JetBrains Mono', monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:{{ t.dotColor }};">{{ t.statusLabel }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="padding:88px 0;border-bottom:1px solid rgba(250,250,250,0.28);">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;">
+      <div style="margin-bottom:52px;">
+        <h2 style="font-family:Oswald, sans-serif;font-size:clamp(30px, 4vw, 42px);text-transform:uppercase;letter-spacing:-0.01em;margin:0;">Experience</h2>
+      </div>
+
+      <div ref="{{ timelineWrapRef }}" style="position:relative;padding-left:28px;">
+        <div style="{{ timelineLineStyleVal }}"></div>
+
+        <div ref="{{ tl0.entryRef }}" style="{{ tl0.entryStyle }}">
+          <div style="{{ tl0.dotStyle }}"></div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;color:#B8B8B8;letter-spacing:0.04em;">SEP 2024 - PRESENT</div>
+          <div style="font-family:Oswald, sans-serif;font-size:19px;text-transform:uppercase;margin-top:4px;">Visual Content &amp; Marketing</div>
+          <div style="color:#FF2E00;font-size:13.5px;margin-top:2px;">BigBoyToyz, Gurugram</div>
+          <div style="color:#B8B8B8;font-size:14px;margin-top:8px;max-width:560px;">Meta Ads, product content, and event coverage for a luxury/exotic car dealership.</div>
+        </div>
+        <div ref="{{ tl1.entryRef }}" style="{{ tl1.entryStyle }}">
+          <div style="{{ tl1.dotStyle }}"></div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;color:#B8B8B8;letter-spacing:0.04em;">2023 - PRESENT</div>
+          <div style="font-family:Oswald, sans-serif;font-size:19px;text-transform:uppercase;margin-top:4px;">Founder</div>
+          <div style="color:#FF2E00;font-size:13.5px;margin-top:2px;">TorqHeads</div>
+          <div style="color:#B8B8B8;font-size:14px;margin-top:8px;max-width:560px;">Built and grew a 70,000+ member automotive community from scratch.</div>
+        </div>
+        <div ref="{{ tl2.entryRef }}" style="{{ tl2.entryStyle }}">
+          <div style="{{ tl2.dotStyle }}"></div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;color:#B8B8B8;letter-spacing:0.04em;">2022 - NOV 2023</div>
+          <div style="font-family:Oswald, sans-serif;font-size:19px;text-transform:uppercase;margin-top:4px;">Graphics Designer</div>
+          <div style="color:#FF2E00;font-size:13.5px;margin-top:2px;">The Isaiko</div>
+          <div style="color:#B8B8B8;font-size:14px;margin-top:8px;max-width:560px;">Digital assets and campaign strategy support.</div>
+        </div>
+        <div ref="{{ tl3.entryRef }}" style="{{ tl3.entryStyle }}">
+          <div style="{{ tl3.dotStyle }}"></div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;color:#B8B8B8;letter-spacing:0.04em;">2022</div>
+          <div style="font-family:Oswald, sans-serif;font-size:19px;text-transform:uppercase;margin-top:4px;">Jr. UI/UX Designer</div>
+          <div style="color:#FF2E00;font-size:13.5px;margin-top:2px;">The Isaiko</div>
+          <div style="color:#B8B8B8;font-size:14px;margin-top:8px;max-width:560px;">Early video and product-design ideation work.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:40px;">
+        <div>
+          <h3 style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#B8B8B8;margin-bottom:16px;">Education</h3>
+          <ul style="list-style:none;margin:0;padding:0;">
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">Dronacharya College of Engineering, B-Tech CSE <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">2020–2024</span></li>
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">Montfort Sr. Sec. School <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">2008–2020</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#B8B8B8;margin-bottom:16px;">Certificates</h3>
+          <ul style="list-style:none;margin:0;padding:0;">
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">Google UX Design Professional Certificate <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">Google</span></li>
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">Google UX Design Specialization <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">Google</span></li>
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">Create High-Fidelity Designs in Figma <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">Google</span></li>
+            <li style="font-size:14px;padding:10px 0;border-bottom:1px solid rgba(250,250,250,0.28);display:flex;justify-content:space-between;gap:12px;">The Complete 2024 Web Dev Bootcamp <span style="color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:12px;white-space:nowrap;">Udemy</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:88px 0;border-bottom:none;">
+    <div style="max-width:1120px;margin:0 auto;padding:0 28px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));gap:50px;align-items:start;">
+        <div>
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#FF2E00;display:flex;align-items:center;gap:10px;margin-bottom:22px;">
+            <span style="width:26px;height:1px;background:#FF2E00;display:inline-block;"></span>
+            Get in touch
+          </div>
+          <h2 style="font-family:Oswald, sans-serif;font-size:clamp(30px, 4vw, 42px);text-transform:uppercase;letter-spacing:-0.01em;margin:0;max-width:480px;">Let's build<br/>something that moves.</h2>
+          <p style="color:#B8B8B8;margin-top:18px;max-width:440px;font-size:15px;">Open to growth, performance, and content-marketing roles - remote or Delhi/NCR. Fastest way to reach me is email.</p>
+
+          <div style="margin-top:30px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-top:1px solid rgba(250,250,250,0.28);border-bottom:1px solid rgba(250,250,250,0.28);">
+              <div><div style="font-size:12px;color:#B8B8B8;text-transform:uppercase;letter-spacing:0.06em;">Email</div><div style="font-family:'JetBrains Mono', monospace;font-size:14.5px;">vaibhavz2002@gmail.com</div></div>
+              <button onclick="{{ copyEmail }}" style="font-family:'JetBrains Mono', monospace;font-size:11px;color:#FF2E00;border:1px solid rgba(250,250,250,0.28);padding:6px 12px;border-radius:0;background:transparent;cursor:pointer;transition:border-color 200ms ease-out;" style-hover="border-color:#FF2E00;">{{ emailBtnLabel }}</button>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(250,250,250,0.28);gap:16px;flex-wrap:wrap;">
+              <div style="font-size:12px;color:#B8B8B8;text-transform:uppercase;letter-spacing:0.06em;">Phone</div>
+              <div style="font-family:'JetBrains Mono', monospace;font-size:14.5px;">+91 8383894839</div>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(250,250,250,0.28);gap:16px;flex-wrap:wrap;">
+              <div style="font-size:12px;color:#B8B8B8;text-transform:uppercase;letter-spacing:0.06em;">LinkedIn</div>
+              <a href="https://linkedin.com/in/vaibhav-sharma-b62213236" target="_blank" rel="noopener" style="font-family:'JetBrains Mono', monospace;font-size:13px;color:#FAFAFA;text-decoration:none;border-bottom:1px solid rgba(255,46,0,0.6);transition:color 200ms ease-out;" style-hover="color:#FF2E00;">in/vaibhav-sharma-b62213236</a>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(250,250,250,0.28);gap:16px;flex-wrap:wrap;">
+              <div style="font-size:12px;color:#B8B8B8;text-transform:uppercase;letter-spacing:0.06em;">Portfolio</div>
+              <a href="https://vaibhavz2002.wixsite.com/myportfolio" target="_blank" rel="noopener" style="font-family:'JetBrains Mono', monospace;font-size:13px;color:#FAFAFA;text-decoration:none;border-bottom:1px solid rgba(255,46,0,0.6);transition:color 200ms ease-out;" style-hover="color:#FF2E00;">vaibhavz2002.wixsite.com/myportfolio</a>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(250,250,250,0.28);gap:16px;flex-wrap:wrap;">
+              <div style="font-size:12px;color:#B8B8B8;text-transform:uppercase;letter-spacing:0.06em;">GitHub</div>
+              <div style="font-family:'JetBrains Mono', monospace;font-size:12px;color:#FFB020;border:1px dashed #FFB020;padding:5px 10px;letter-spacing:0.04em;text-transform:uppercase;">TODO - add profile URL</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#0A0A0A;border:1px solid rgba(250,250,250,0.28);border-radius:0;padding:28px;">
+          <div style="font-family:'JetBrains Mono', monospace;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#FF2E00;display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <span style="width:26px;height:1px;background:#FF2E00;display:inline-block;"></span>
+            Quick actions
+          </div>
+          <p style="color:#B8B8B8;font-size:13.5px;margin-bottom:18px;">Send a direct email, grab the resume, or save this page as a PDF to attach alongside it.</p>
+          <a href="mailto:vaibhavz2002@gmail.com" style="box-sizing:border-box;width:100%;justify-content:center;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:14px 26px;border-radius:0;display:flex;align-items:center;gap:8px;background:#FF2E00;color:#fff;text-decoration:none;margin-bottom:12px;transition:transform 200ms ease-out, background 200ms ease-out;" style-hover="transform:translateY(-2px);background:#FF5A33;">Email me</a>
+          <a href="#" style="box-sizing:border-box;width:100%;justify-content:center;font-size:12.5px;letter-spacing:0.06em;text-transform:uppercase;padding:13px 26px;border-radius:0;display:flex;align-items:center;gap:8px;border:1px dashed #FFB020;color:#FFB020;text-decoration:none;">TODO - add resume link</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:26px 0 40px;text-align:center;color:#B8B8B8;font-family:'JetBrains Mono', monospace;font-size:11.5px;">
+    BUILT FOR VAIBHAV SHARMA - REPLACE PLACEHOLDER MEDIA BEFORE SENDING TO EMPLOYERS
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+
+const STATS_DATA = [
+  { value: "70K+", label: "Community built", pct: 1 },
+  { value: "19M+", label: "Monthly views", pct: 1 },
+  { value: "60%+", label: "Campaign engagement", pct: 0.6 },
+  { value: "20%", label: "MoM follower growth", pct: 0.2 }
+];
+const GAUGE_SWEEP = 0.75;
+const GAUGE_CIRC = 2 * Math.PI * 44;
+const BBT_STATS = [
+  { value: "3 → 20", label: "Leads per month, in 3 months" },
+  { value: "4", label: "Ad format variations tested" },
+  { value: "40+", label: "Vehicles shot & edited" },
+  { value: "20+", label: "Events documented" }
+];
+const TH_STATS = [
+  { value: "70,000+", label: "Members, 0 to now" },
+  { value: "19M+", label: "Views per month" },
+  { value: "20%", label: "MoM follower growth" },
+  { value: "15%", label: "Meetup participation lift" }
+];
+const ISK_STATS = [
+  { value: "+400%", label: "Social following growth" },
+  { value: "+30%", label: "Website traffic" },
+  { value: "+50%", label: "Video views / shares" },
+  { value: "2", label: "Roles - design → UI/UX" }
+];
+const TOOLKIT_DATA = [
+  { name: "Meta Ads Manager", sub: "Running live campaigns", state: "on" },
+  { name: "Google Ads", sub: "Running live campaigns · cert in progress", state: "on" },
+  { name: "Social Media Management", sub: "Calendars, publishing, community replies", state: "on" },
+  { name: "Video Production", sub: "Directing, shooting, editing ad creative", state: "on" },
+  { name: "Copywriting", sub: "Ad copy, captions, scripts", state: "on" },
+  { name: "Google Analytics (GA4)", sub: "Certified · tracking live campaign performance", state: "on" },
+  { name: "Adobe Premiere Pro", sub: "Daily use", state: "on" },
+  { name: "Adobe After Effects", sub: "Motion & edits", state: "on" },
+  { name: "Photoshop / Illustrator", sub: "Creative production", state: "on" },
+  { name: "Figma", sub: "Wireframes & prototypes", state: "on" },
+  { name: "DaVinci Resolve", sub: "Color & post", state: "on" },
+  { name: "Content Strategy", sub: "Planning & calendars", state: "on" },
+  { name: "Brand Partnerships", sub: "Negotiation & delivery", state: "on" }
+];
+const CASE_STUDIES = {
+  bigboytoyz: {
+    title: "BigBoyToyz",
+    media: [
+      { slotId: "bbt-m1", placeholder: "Original poster ad", caption: "Original poster ad, lifestyle framing" },
+      { slotId: "bbt-m2", placeholder: "Redesigned poster ad", caption: "Redesigned poster ad, price and detail photography" },
+      { slotId: "bbt-m3", placeholder: "Carousel example", caption: "One carousel ad from the 25+ vehicle set" },
+      { slotId: "bbt-m4", placeholder: "Meta Ads Manager", caption: "Lead trend, Meta Ads Manager" },
+      { slotId: "bbt-m5", placeholder: "Google Ads", caption: "Lead trend, Google Ads" },
+      { slotId: "bbt-m6", placeholder: "Event appearance", caption: "Red Bull, TimesDrive Awards, Parliament tour" }
+    ],
+    sections: [
+      { heading: "Situation", body: "BigBoyToyz needed more leads from potential supercar buyers and sellers. I had never made an ad before - I got handed the brief anyway." },
+      { heading: "Approach", body: "I wrote, shot, and edited four distinct ad concepts spanning video, carousel, and static formats, running them across both Meta (Instagram/Facebook) and Google Ads. That meant producing creative for 40+ vehicles from the dealership's inventory - 25+ cars edited into carousel ads, 15+ into static posters - while managing a small team of interns supporting production." },
+      { heading: "The Pivot", body: "The static poster ads underperformed early on. Instead of dropping the format, I checked lead data and sales-team call feedback to find out why, then redesigned the posters around pricing and detailed car photography instead of lifestyle-style framing - a change made from the numbers, not a guess." },
+      { heading: "Result", body: "Over three months, monthly leads grew from 3 to 20 - driven by testing four concepts across two ad platforms and reallocating effort toward what the data showed was working." },
+      { heading: "Reflection", body: "My own honest note for next time: run equal spend across every ad variant from day one, so format comparisons are fully fair rather than shaped by organic reach differences." }
+    ]
+  },
+  torqheads: {
+    title: "TorqHeads",
+    media: [
+      { slotId: "th-m1", placeholder: "Meetup photo", caption: "TorqHeads meetup or local drive" },
+      { slotId: "th-m2", placeholder: "Skoda collab", caption: "Skoda collaboration post" },
+      { slotId: "th-m3", placeholder: "Zelix collab", caption: "Zelix Automotives collaboration post" },
+      { slotId: "th-m4", placeholder: "Engagement stats", caption: "Instagram insights, 60%+ engagement" },
+      { slotId: "th-m5", placeholder: "Growth chart", caption: "Follower growth, 20% month over month" },
+      { slotId: "th-m6", placeholder: "Content calendar", caption: "Content calendar built around audience feedback" }
+    ],
+    sections: [
+      { heading: "Situation", body: "TorqHeads didn't exist yet - no members, no following, no ad budget. I needed to build an automotive community people would actually want to be part of, not just another content page." },
+      { heading: "Approach", body: "I posted daily, replied to comments and DMs personally in the early months, and treated growth as a product problem - testing formats and building a content calendar around what the audience engaged with most." },
+      { heading: "The Pivot", body: "Follower growth is easy to chase and hard to make meaningful. Once it was clear that in-person meetups and local drives drove deeper engagement than any single post, I shifted effort toward organizing them - a push that alone lifted meetup participation by 15%." },
+      { heading: "Result", body: "The community grew to 70,000+ members with 19M+ monthly views, sustaining 20% month-over-month follower growth and drawing brand collaborations with Skoda and Zelix Automotives at 60%+ engagement." },
+      { heading: "Reflection", body: "Looking back, I'd formalize the meetup cadence sooner - it took longer than it should have to notice offline touchpoints were outperforming pure content reach." }
+    ]
+  },
+  isaiko: {
+    title: "The Isaiko",
+    media: [],
+    sections: [
+      { heading: "Situation", body: "The Isaiko - then operating as Astitva, pre legal rename - needed a cohesive brand identity and a stronger digital presence, without an in-house design or marketing team." },
+      { heading: "Approach", body: "I co-developed the marketing strategy and built the brand guide from scratch - colour system, typography, logo lockups, and templated social/video formats - then produced the day-to-day social and video assets against it." },
+      { heading: "The Pivot", body: "Early assets leaned on lifestyle-style visuals; as traffic and engagement data came in, I shifted templates toward clearer typography-led layouts, which is what's reflected in the final brand guide." },
+      { heading: "Result", body: "Social following grew 400%, website traffic rose 30%, and video views/shares rose 50% over the engagement, while I moved from a design-focused role into UI/UX work." },
+      { heading: "Reflection", body: "In hindsight, documenting the brand guide earlier in the engagement would have kept the transitional (Astitva → Isaiko) assets more consistent." }
+    ]
+  }
+};
+
+function parseCountable(str) {
+  const s = String(str);
+  const matches = [...s.matchAll(/[\d,]+/g)];
+  if (!matches.length) return { prefix: s, target: 0, suffix: "", isNumeric: false };
+  const last = matches[matches.length - 1];
+  const target = parseInt(last[0].replace(/,/g, ""), 10);
+  return { prefix: s.slice(0, last.index), target, suffix: s.slice(last.index + last[0].length), isNumeric: true };
+}
+function formatCount(pc, val) {
+  if (!pc.isNumeric) return pc.prefix;
+  return pc.prefix + val.toLocaleString("en-US") + pc.suffix;
+}
+
+class Component extends DCLogic {
+  state = {
+    emailCopied: false,
+    activeCaseStudyId: null,
+    reels: {},
+    csVisible: false,
+    heroLoaded: false,
+    gaugeProgress: 0,
+    revealed: {},
+    counts: {},
+    hoverBtn: null
+  };
+
+  gaugeTicks() {
+    if (this._ticksCache) return this._ticksCache;
+    const n = 22;
+    this._ticksCache = React.createElement("div", { style: { position: "absolute", inset: 0 } },
+      Array.from({ length: n }, (_, i) => {
+        const frac = i / (n - 1);
+        const hot = frac > 0.85;
+        return React.createElement("div", { key: i, style: {
+          position: "absolute", left: "50%", top: "50%", width: "1px", height: "71px",
+          transformOrigin: "top center", transform: `rotate(${135 + frac * 270}deg)`,
+          background: `linear-gradient(to bottom, transparent 0 60px, ${hot ? "#FF2E00" : "rgba(250,250,250,0.4)"} 60px 71px)`
+        } });
+      })
+    );
+    return this._ticksCache;
+  }
+
+  runGaugeCluster() {
+    if (this._gaugeRan) return;
+    this._gaugeRan = true;
+    if (this.reducedMotion) { this.setState({ gaugeProgress: 1 }); return; }
+    const dur = 1100, start = performance.now();
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      this.setState({ gaugeProgress: 1 - Math.pow(1 - t, 3) });
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  reducedMotion = !!(typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  _ioCallbacks = new Map();
+  _registeredEls = new Set();
+  _counted = new Set();
+  _io = typeof IntersectionObserver !== "undefined" ? new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const cb = this._ioCallbacks.get(entry.target);
+        if (cb) cb();
+        this._io.unobserve(entry.target);
+        this._ioCallbacks.delete(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }) : null;
+
+  componentDidMount() {
+    if (!this._io) this.reducedMotion = true;
+
+    if (this.reducedMotion) {
+      this.setState({ heroLoaded: true });
+    } else {
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ heroLoaded: true })));
+    }
+
+    this._onKeyDown = (e) => {
+      if (e.key === "Escape") {
+        if (this.state.activeCaseStudyId) this.closeCaseStudy();
+      }
+    };
+    window.addEventListener("keydown", this._onKeyDown);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("keydown", this._onKeyDown);
+    if (this._io) this._io.disconnect();
+    if (this._reelObs) this._reelObs.disconnect();
+    clearTimeout(this._csTimer);
+  }
+
+  copy(text, key) {
+    navigator.clipboard.writeText(text).then(() => {
+      this.setState({ [key]: true });
+      setTimeout(() => this.setState({ [key]: false }), 1500);
+    });
+  }
+
+  registerReveal(key, onEnter) {
+    return (el) => {
+      if (!el) return;
+      if (this._registeredEls.has(el)) return;
+      this._registeredEls.add(el);
+      if (this.reducedMotion) {
+        this.reveal(key);
+        if (onEnter) onEnter();
+        return;
+      }
+      this._ioCallbacks.set(el, () => {
+        this.reveal(key);
+        if (onEnter) onEnter();
+      });
+      this._io.observe(el);
+    };
+  }
+
+  reveal(key) {
+    this.setState((s) => (s.revealed[key] ? null : { revealed: { ...s.revealed, [key]: true } }));
+  }
+
+  countUp(key, target) {
+    if (this._counted.has(key)) return;
+    this._counted.add(key);
+    if (this.reducedMotion) {
+      this.setState((s) => ({ counts: { ...s.counts, [key]: target } }));
+      return;
+    }
+    const duration = 900;
+    const start = performance.now();
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      const val = Math.round(target * eased);
+      this.setState((s) => ({ counts: { ...s.counts, [key]: val } }));
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  revealStyle(revealed, idx, opts) {
+    opts = opts || {};
+    const distance = opts.distance ?? 20;
+    const duration = opts.duration ?? 420;
+    const delayStep = opts.delayStep ?? 45;
+    const maxDelay = opts.maxDelay ?? 300;
+    if (this.reducedMotion) return { opacity: 1, transform: "none" };
+    const delay = Math.min((idx || 0) * delayStep, maxDelay);
+    return {
+      opacity: revealed ? 1 : 0,
+      transform: revealed ? "translateY(0)" : `translateY(${distance}px)`,
+      transition: `opacity ${duration}ms ease-out ${delay}ms, transform ${duration}ms ease-out ${delay}ms`
+    };
+  }
+
+  heroStyle(order, base) {
+    const anim = this.reducedMotion
+      ? { opacity: 1, transform: "none" }
+      : {
+          opacity: this.state.heroLoaded ? 1 : 0,
+          transform: this.state.heroLoaded ? "translateY(0)" : "translateY(22px)",
+          transition: `opacity 480ms ease-out ${order * 110}ms, transform 480ms ease-out ${order * 110}ms`
+        };
+    return { ...base, ...anim };
+  }
+
+  buildStatCells(list, prefix, revealOpts) {
+    return list.map((s, i) => {
+      const key = prefix + i;
+      const pc = parseCountable(s.value);
+      const val = this.state.counts[key] ?? 0;
+      const revealed = !!this.state.revealed[key];
+      const r = this.revealStyle(revealed, i, revealOpts);
+      return {
+        label: s.label,
+        index: String(i + 1).padStart(2, "0"),
+        display: formatCount(pc, val),
+        ref: this.registerReveal(key, () => this.countUp(key, pc.target)),
+        cellStyle: { padding: "24px 22px", borderRight: i === list.length - 1 ? "none" : "1px solid rgba(250,250,250,0.28)", ...r }
+      };
+    });
+  }
+
+  cardAnim(idx, isLast) {
+    const key = "card" + idx;
+    const revealed = !!this.state.revealed[key];
+    const r = this.revealStyle(revealed, idx, { distance: 24, delayStep: 90, maxDelay: 270 });
+    return {
+      style: { background: "#0A0A0A", border: "1px solid rgba(250,250,250,0.28)", marginBottom: isLast ? "0px" : "26px", overflow: "hidden", ...r },
+      ref: this.registerReveal(key, null)
+    };
+  }
+
+  buttonAnim(key) {
+    return {
+      onEnter: () => this.setState({ hoverBtn: key }),
+      onLeave: () => this.setState((s) => (s.hoverBtn === key ? { hoverBtn: null } : null)),
+      arrowStyle: { display: "inline-block", transition: "transform 220ms ease-out", transform: this.state.hoverBtn === key ? "translateX(4px)" : "translateX(0)" }
+    };
+  }
+
+  timelineLineStyle() {
+    const revealed = !!this.state.revealed.timelineSection;
+    const base = { position: "absolute", left: "5px", top: "6px", bottom: "6px", width: "1px", background: "#FF2E00" };
+    if (this.reducedMotion) return base;
+    return { ...base, transformOrigin: "top", transform: revealed ? "scaleY(1)" : "scaleY(0)", transition: "transform 600ms ease-out" };
+  }
+
+  timelineDotStyle(idx) {
+    const revealed = !!this.state.revealed.timelineSection;
+    const base = { position: "absolute", left: "-28px", top: "4px", width: "11px", height: "11px", borderRadius: "50%", background: "#0A0A0A", border: "2px solid #FF2E00" };
+    if (this.reducedMotion) return base;
+    return { ...base, transform: revealed ? "scale(1)" : "scale(0)", transition: `transform 320ms ease-out ${idx * 110}ms` };
+  }
+
+  timelineEntryStyle(idx, isLast) {
+    const revealed = !!this.state.revealed["tl" + idx];
+    const r = this.revealStyle(revealed, idx, { distance: 16, delayStep: 70, maxDelay: 210 });
+    return { position: "relative", paddingBottom: isLast ? "0px" : "36px", ...r };
+  }
+
+  registerReel(key) {
+    return (el) => {
+      if (!el) return;
+      if (!this._reelEls) this._reelEls = new Map();
+      if (this._reelEls.get(key) === el) return;
+      this._reelEls.set(key, el);
+      el.dataset.reelKey = key;
+      if (typeof IntersectionObserver === "undefined") {
+        this.setState((s) => ({ reels: { ...s.reels, [key]: true } }));
+        return;
+      }
+      if (!this._reelObs) {
+        this._reelObs = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            const k = e.target.dataset.reelKey;
+            if (!k) return;
+            this.setState((s) => (s.reels[k] === e.isIntersecting ? null : { reels: { ...s.reels, [k]: e.isIntersecting } }));
+          });
+        }, { threshold: 0.25 });
+      }
+      this._reelObs.observe(el);
+    };
+  }
+
+  reelVals(key) {
+    const active = !!this.state.reels[key];
+    return {
+      ref: this.registerReel(key),
+      active,
+      idle: !active,
+      status: active ? "Reel playing" : "Reel idle",
+      dotStyle: {
+        width: "7px", height: "7px", borderRadius: "50%", flexShrink: 0,
+        background: active ? "#FF2E00" : "rgba(250,250,250,0.35)"
+      }
+    };
+  }
+
+  openCaseStudy(id) {
+    clearTimeout(this._csTimer);
+    this.setState({ activeCaseStudyId: id, csVisible: false });
+    if (this.reducedMotion) {
+      this.setState({ csVisible: true });
+    } else {
+      requestAnimationFrame(() => requestAnimationFrame(() => this.setState({ csVisible: true })));
+    }
+  }
+
+  closeCaseStudy() {
+    if (!this.state.activeCaseStudyId) return;
+    this.setState({ csVisible: false });
+    clearTimeout(this._csTimer);
+    this._csTimer = setTimeout(() => this.setState({ activeCaseStudyId: null }), this.reducedMotion ? 0 : 320);
+  }
+
+  renderVals() {
+    const gp = this.state.gaugeProgress;
+    const arcLen = GAUGE_CIRC * GAUGE_SWEEP;
+    const stats = STATS_DATA.map((s) => {
+      const pc = parseCountable(s.value);
+      return {
+        label: s.label,
+        display: formatCount(pc, Math.round(pc.target * gp)),
+        ticks: this.gaugeTicks(),
+        trackDash: `${arcLen} ${GAUGE_CIRC}`,
+        redlineDash: `${arcLen * 0.15} ${GAUGE_CIRC}`,
+        fillDash: `${arcLen * s.pct * gp} ${GAUGE_CIRC}`,
+        style: { background: "#0A0A0A", border: "1px solid rgba(250,250,250,0.28)", padding: "26px 18px", display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }
+      };
+    });
+
+    const bbtStats = this.buildStatCells(BBT_STATS, "bbt", { distance: 14, delayStep: 60, maxDelay: 180 });
+    const thStats = this.buildStatCells(TH_STATS, "th", { distance: 14, delayStep: 60, maxDelay: 180 });
+    const iskStats = this.buildStatCells(ISK_STATS, "isk", { distance: 14, delayStep: 60, maxDelay: 180 });
+
+    const toolkit = TOOLKIT_DATA.map((t, i) => {
+      const on = t.state === "on";
+      const pending = t.state === "pending";
+      const key = "tk" + i;
+      const revealed = !!this.state.revealed[key];
+      const r = this.revealStyle(revealed, i, { distance: 16, delayStep: 50, maxDelay: 300 });
+      return {
+        name: t.name,
+        sub: t.sub,
+        dotColor: on ? "#22C55E" : pending ? "#FFB020" : "#B8B8B8",
+        statusLabel: on ? "Active" : pending ? "Building" : "Idle",
+        dotAnim: pending ? "pulse 1.6s ease-in-out infinite" : "none",
+        ref: this.registerReveal(key, null),
+        rowStyle: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: "14px", background: "#0A0A0A", border: "1px solid rgba(250,250,250,0.28)", padding: "16px 18px", ...r }
+      };
+    });
+
+    const activeCaseStudy = this.state.activeCaseStudyId ? CASE_STUDIES[this.state.activeCaseStudyId] : null;
+
+    const csVisible = this.state.csVisible;
+
+    return {
+      stats,
+      bbtStats,
+      thStats,
+      iskStats,
+      toolkit,
+
+      heroEyebrowStyle: this.heroStyle(0, { fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF2E00", display: "flex", alignItems: "center", gap: "10px", marginBottom: "22px" }),
+      heroH1Style: this.heroStyle(1, { fontFamily: "Oswald, sans-serif", fontWeight: 700, fontSize: "clamp(48px, 8vw, 92px)", lineHeight: 0.98, letterSpacing: "-0.01em", textTransform: "uppercase", maxWidth: "820px", margin: 0 }),
+      heroPStyle: this.heroStyle(2, { marginTop: "24px", maxWidth: "560px", fontSize: "17px", color: "#B8B8B8" }),
+      heroPositioningStyle: this.heroStyle(3, { marginTop: "14px", maxWidth: "560px", fontSize: "14.5px", color: "#B8B8B8", borderLeft: "1px solid #FF2E00", paddingLeft: "14px" }),
+      heroCtaStyle: this.heroStyle(4, { marginTop: "38px", display: "flex", gap: "14px", flexWrap: "wrap" }),
+
+      card0: this.cardAnim(0, false),
+      card1: this.cardAnim(1, false),
+      card2: this.cardAnim(2, true),
+
+      bbtBtn: this.buttonAnim("bbt"),
+      thBtn: this.buttonAnim("th"),
+      iskBtn: this.buttonAnim("isk"),
+
+      gaugeClusterRef: this.registerReveal("gaugeCluster", () => this.runGaugeCluster()),
+      reelVideoRef: (el) => {
+        if (!el) return;
+        el.muted = true;
+        el.defaultMuted = true;
+        el.setAttribute("muted", "");
+        const p = el.play();
+        if (p && p.catch) p.catch(() => {});
+      },
+      reel0: this.reelVals("bigboytoyz"),
+      reel1: this.reelVals("torqheads"),
+      reel2: this.reelVals("isaiko"),
+      timelineWrapRef: this.registerReveal("timelineSection", null),
+      timelineLineStyleVal: this.timelineLineStyle(),
+      tl0: { entryStyle: this.timelineEntryStyle(0, false), entryRef: this.registerReveal("tl0", null), dotStyle: this.timelineDotStyle(0) },
+      tl1: { entryStyle: this.timelineEntryStyle(1, false), entryRef: this.registerReveal("tl1", null), dotStyle: this.timelineDotStyle(1) },
+      tl2: { entryStyle: this.timelineEntryStyle(2, false), entryRef: this.registerReveal("tl2", null), dotStyle: this.timelineDotStyle(2) },
+      tl3: { entryStyle: this.timelineEntryStyle(3, true), entryRef: this.registerReveal("tl3", null), dotStyle: this.timelineDotStyle(3) },
+
+      emailBtnLabel: this.state.emailCopied ? "Copied" : "Copy",
+      copyEmail: () => this.copy("vaibhavz2002@gmail.com", "emailCopied"),
+
+      activeCaseStudy,
+      csHasMedia: !!(activeCaseStudy && activeCaseStudy.media && activeCaseStudy.media.length),
+      csMedia: (activeCaseStudy && activeCaseStudy.media ? activeCaseStudy.media : []).map((m) => ({
+        ...m,
+        wrapStyle: {
+          position: "relative",
+          aspectRatio: this.state.activeCaseStudyId === "torqheads" ? "16 / 9" : "16 / 10",
+          border: "1px solid rgba(250,250,250,0.28)",
+          overflow: "hidden",
+          background: "#0A0A0A"
+        }
+      })),
+      csBackdropStyle: this.reducedMotion
+        ? { position: "fixed", inset: 0, background: "rgba(10,10,10,0.85)", zIndex: 100, display: "flex", alignItems: "flex-end", justifyContent: "center" }
+        : { position: "fixed", inset: 0, background: "rgba(10,10,10,0.85)", zIndex: 100, display: "flex", alignItems: "flex-end", justifyContent: "center", opacity: csVisible ? 1 : 0, transition: "opacity 320ms ease-out" },
+      csPanelStyle: this.reducedMotion
+        ? { background: "#0A0A0A", border: "1px solid rgba(250,250,250,0.28)", borderBottom: "none", width: "100%", maxWidth: "680px", maxHeight: "88vh", overflowY: "auto", padding: "0 26px 40px", position: "relative" }
+        : { background: "#0A0A0A", border: "1px solid rgba(250,250,250,0.28)", borderBottom: "none", width: "100%", maxWidth: "680px", maxHeight: "88vh", overflowY: "auto", padding: "0 26px 40px", position: "relative", opacity: csVisible ? 1 : 0, transform: csVisible ? "translateY(0)" : "translateY(32px)", transition: "opacity 320ms ease-out, transform 320ms ease-out" },
+      openCaseStudy_bigboytoyz: () => this.openCaseStudy("bigboytoyz"),
+      openCaseStudy_torqheads: () => this.openCaseStudy("torqheads"),
+      openCaseStudy_isaiko: () => this.openCaseStudy("isaiko"),
+      closeCaseStudy: () => this.closeCaseStudy(),
+      stopProp: (e) => e.stopPropagation()
+    };
+  }
+}
+
+</script>
+</body>
+</html>
